@@ -17,7 +17,7 @@ function submitIt() {
 }
 
 function pressIt() {
-  $( 'form input' ).on( 'keydown', function() {
+  $( 'form input' ).on( 'keydown', function( key ) {
     if( key.key == 'g' )
       alert( 'G pressed' )
   })
