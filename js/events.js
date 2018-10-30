@@ -16,6 +16,13 @@ function submitIt() {
   })
 }
 
+function pressIt() {
+  $( 'form input' ).on( 'keydown', function() {
+    if( key.key == 'g' )
+      alert( 'G pressed' )
+  })
+}
+
 $(document).ready(function(){
 
 
